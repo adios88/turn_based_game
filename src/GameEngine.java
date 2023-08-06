@@ -3,15 +3,12 @@ import java.util.Scanner;
 public class GameEngine {
     GameMenu gameMenu = new GameMenu();
     Scanner scanner = new Scanner(System.in);
-
-    Battle battle = new Battle(new Goblin(),new Goblin());
     void runGame(){
         gameMenu.displayIntro();
         String userInput = getUserInput();
         switch(userInput){
 
             case "1":
-                battle.startBattle();
                 break;
             case "2":
                 System.out.println("See you next time!");
